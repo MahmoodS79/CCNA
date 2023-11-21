@@ -1,0 +1,233 @@
+Nov 10 01:14:48.290 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 10 01:14:48.292 HYPERVISOR: Started on IP = localhost, TCP port = 52112.
+Nov 10 01:14:48.837 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 10 01:14:48.839 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips 
+Nov 10 01:14:48.839 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips
+Nov 10 01:14:48.839 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\9835b852-9815-4993-8172-990fc070ca16 
+Nov 10 01:14:48.840 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\9835b852-9815-4993-8172-990fc070ca16
+Nov 10 01:14:48.840 HYPERVISOR: exec_cmd: vm create R3 3 c3600 
+Nov 10 01:14:48.843 VM: VM R3 created.
+Nov 10 01:14:48.844 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5004 
+Nov 10 01:14:48.844 HYPERVISOR: exec_cmd: c3600 get_mac_addr R3 
+Nov 10 01:14:48.844 HYPERVISOR: exec_cmd: c3600 set_chassis R3 3660 
+Nov 10 01:14:48.846 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Nov 10 01:14:48.846 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 01:14:48.847 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x604e9ed4 
+Nov 10 01:14:48.849 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Sence79/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Nov 10 01:14:48.850 HYPERVISOR: exec_cmd: c3600 set_mac_addr R3 cc03.1d20.0000 
+Nov 10 01:14:48.850 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Nov 10 01:14:48.851 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+Nov 10 01:14:50.814 HYPERVISOR: exec_cmd: nio create_udp udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 20011 127.0.0.1 20012 
+Nov 10 01:14:51.092 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 
+Nov 10 01:14:51.094 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 01:15:13.233 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Nov 10 01:15:13.235 VM: VM Ghost created.
+Nov 10 01:15:13.242 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Sence79/GNS3/images/IOS/c3660-a3jk9s-mz.124-15.T14.image 
+Nov 10 01:15:13.242 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 10 01:15:13.243 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 01:15:13.244 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Nov 10 01:15:13.245 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 10 01:15:13.246 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 10 01:15:13.246 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 10 01:15:13.663 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 10 01:15:13.665 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 10 01:15:13.936 VM: VM Ghost shutdown.
+Nov 10 01:15:13.937 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 10 01:15:13.939 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 10 01:15:13.939 VM: VM Ghost destroyed.
+Nov 10 01:15:13.944 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 01:15:13.944 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 01:15:13.945 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 01:15:13.955 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 01:15:13.956 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 01:15:44.331 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 09:52:26.551 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 09:52:26.552 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 09:52:26.670 VM: VM R3 shutdown.
+Nov 10 09:52:26.672 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 10:04:33.602 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 10:04:33.604 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 10:10:21.060 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 10:10:21.062 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 12:47:28.768 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 12:47:28.769 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 12:47:28.770 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 12:47:28.779 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 12:47:28.779 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 12:57:50.350 HYPERVISOR: exec_cmd: nio bind_filter udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 2 capture 
+Nov 10 12:57:50.350 HYPERVISOR: exec_cmd: nio setup_filter udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 2 en10mb C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\captures\cisco_viralimage_IOSv156-1_Gi00_to_R3_FastEthernet01.pcap 
+Nov 10 13:02:05.564 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:02:05.564 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 13:02:05.663 VM: VM R3 shutdown.
+Nov 10 13:02:05.664 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 13:02:05.673 HYPERVISOR: exec_cmd: nio unbind_filter udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 2 
+Nov 10 13:02:10.568 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 13:02:10.569 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 13:02:10.569 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:02:10.579 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 13:02:10.579 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 13:04:57.972 HYPERVISOR: exec_cmd: nio bind_filter udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 2 capture 
+Nov 10 13:04:57.973 HYPERVISOR: exec_cmd: nio setup_filter udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 2 en10mb C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\captures\cisco_viralimage_IOSv156-1_Gi00_to_R3_FastEthernet01.pcap 
+Nov 10 13:10:49.550 HYPERVISOR: exec_cmd: nio unbind_filter udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 2 
+Nov 10 13:14:38.321 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:14:38.321 HYPERVISOR: exec_cmd: vm slot_disable_nio R3 0 1 
+Nov 10 13:14:38.325 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 1 
+Nov 10 13:14:38.327 HYPERVISOR: exec_cmd: nio delete udp-c7bc94bb-7495-4a93-a480-9128aaea1ffb 
+Nov 10 13:14:43.054 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:14:43.054 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 13:14:43.158 VM: VM R3 shutdown.
+Nov 10 13:14:43.159 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 13:17:33.922 HYPERVISOR: exec_cmd: nio create_udp udp-da13fdd4-a078-4bb1-9e28-49bdacd189a3 20013 127.0.0.1 20014 
+Nov 10 13:17:33.926 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-da13fdd4-a078-4bb1-9e28-49bdacd189a3 
+Nov 10 13:17:33.927 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:23:49.736 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 13:23:49.737 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 13:23:49.738 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:23:49.746 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 13:23:49.746 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 13:24:58.871 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:24:58.871 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 13:24:58.998 VM: VM R3 shutdown.
+Nov 10 13:24:59.007 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 13:25:52.108 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:25:52.108 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Nov 10 13:25:52.110 HYPERVISOR: exec_cmd: nio delete udp-da13fdd4-a078-4bb1-9e28-49bdacd189a3 
+Nov 10 13:25:58.812 HYPERVISOR: exec_cmd: nio create_udp udp-b9b7782b-c018-4c5b-901c-9ff236707a35 20013 127.0.0.1 20014 
+Nov 10 13:25:58.816 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-b9b7782b-c018-4c5b-901c-9ff236707a35 
+Nov 10 13:25:58.817 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:28:22.141 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 13:28:22.142 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 13:28:22.143 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:28:22.152 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 13:28:22.152 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 13:30:45.899 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:30:45.900 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 13:30:46.001 VM: VM R3 shutdown.
+Nov 10 13:30:46.003 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 13:30:50.223 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 13:30:50.224 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 13:30:50.224 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:30:50.233 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 13:30:50.233 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 13:31:41.098 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:31:41.098 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 13:31:41.225 VM: VM R3 shutdown.
+Nov 10 13:31:41.228 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 13:31:41.449 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 13:31:41.449 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 13:31:41.450 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:31:41.457 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 13:31:41.458 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 13:35:22.118 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:35:22.118 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 13:35:22.214 VM: VM R3 shutdown.
+Nov 10 13:35:22.215 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 13:35:22.664 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 13:35:22.664 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 13:35:22.665 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:35:22.672 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 13:35:22.672 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 13:36:56.160 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:36:56.160 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 13:36:56.219 VM: VM R3 shutdown.
+Nov 10 13:36:56.220 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 13:36:56.496 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 13:36:56.497 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 13:36:56.497 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 13:36:56.505 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 13:36:56.505 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 13:37:00.502 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 13:37:00.505 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 13:37:00.507 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:07:42.336 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:07:42.337 HYPERVISOR: exec_cmd: vm slot_disable_nio R3 0 1 
+Nov 10 14:07:42.349 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 1 
+Nov 10 14:07:42.351 HYPERVISOR: exec_cmd: nio delete udp-b9b7782b-c018-4c5b-901c-9ff236707a35 
+Nov 10 14:10:24.534 HYPERVISOR: exec_cmd: nio create_udp udp-81a7830f-bbe9-44c9-ac1b-7130779042a8 20009 127.0.0.1 20010 
+Nov 10 14:10:24.537 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-81a7830f-bbe9-44c9-ac1b-7130779042a8 
+Nov 10 14:10:24.538 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:10:24.538 HYPERVISOR: exec_cmd: vm slot_enable_nio R3 0 1 
+Nov 10 14:11:10.221 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 14:11:10.222 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 14:11:10.224 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:11:13.955 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:11:13.955 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 14:11:14.069 VM: VM R3 shutdown.
+Nov 10 14:11:14.074 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:11:14.707 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 14:11:14.708 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 14:11:14.709 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:11:14.717 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 14:11:14.718 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 14:13:30.836 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:13:30.836 HYPERVISOR: exec_cmd: vm slot_disable_nio R3 0 1 
+Nov 10 14:13:30.844 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 1 
+Nov 10 14:13:30.847 HYPERVISOR: exec_cmd: nio delete udp-81a7830f-bbe9-44c9-ac1b-7130779042a8 
+Nov 10 14:13:34.478 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:13:34.478 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 14:13:34.592 VM: VM R3 shutdown.
+Nov 10 14:13:34.593 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:14:23.551 HYPERVISOR: exec_cmd: nio create_udp udp-b1dfe338-bde4-43d6-8335-81f3f031c80e 20012 127.0.0.1 20013 
+Nov 10 14:14:23.557 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-b1dfe338-bde4-43d6-8335-81f3f031c80e 
+Nov 10 14:14:23.558 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:18:12.933 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 14:18:12.934 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 14:18:12.934 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:18:12.943 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 14:18:12.943 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 14:25:29.281 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:25:29.281 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 14:25:29.400 VM: VM R3 shutdown.
+Nov 10 14:25:29.404 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:25:29.660 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 14:25:29.660 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 14:25:29.661 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:25:29.669 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 14:25:29.670 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 14:27:21.897 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:27:21.898 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 14:27:22.027 VM: VM R3 shutdown.
+Nov 10 14:27:22.029 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:27:25.093 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:27:25.093 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Nov 10 14:27:25.095 HYPERVISOR: exec_cmd: nio delete udp-b1dfe338-bde4-43d6-8335-81f3f031c80e 
+Nov 10 14:27:30.786 HYPERVISOR: exec_cmd: nio create_udp udp-557e3266-cf4c-4287-bb86-cca45c17953d 20010 127.0.0.1 20011 
+Nov 10 14:27:30.790 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-557e3266-cf4c-4287-bb86-cca45c17953d 
+Nov 10 14:27:30.790 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:27:33.740 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 14:27:33.741 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 14:27:33.742 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:27:33.750 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 14:27:33.751 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 14:33:25.224 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:33:25.224 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 14:33:25.348 VM: VM R3 shutdown.
+Nov 10 14:33:25.350 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:33:25.637 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 14:33:25.638 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 14:33:25.638 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:33:25.649 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 14:33:25.649 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 14:52:26.429 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:54:57.043 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:54:57.043 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 14:54:57.163 VM: VM R3 shutdown.
+Nov 10 14:54:57.167 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:55:01.768 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 10 14:55:01.769 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c3660-a3jk9s-mz.124-15.T14.image-192.ghost 
+Nov 10 14:55:01.770 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:55:01.778 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Nov 10 14:55:01.779 HYPERVISOR: exec_cmd: vm start R3 
+Nov 10 14:55:12.977 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:55:12.978 HYPERVISOR: exec_cmd: vm stop R3 
+Nov 10 14:55:13.051 VM: VM R3 shutdown.
+Nov 10 14:55:13.052 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:55:14.955 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:55:14.957 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:55:15.177 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 10 14:55:15.179 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 10 14:55:15.181 HYPERVISOR: exec_cmd: vm delete R3 
+Nov 10 14:55:15.181 VM: VM R3 destroyed.
+Nov 10 14:55:15.185 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 10 14:55:15.404 HYPERVISOR: Stopped.
+Nov 10 14:55:15.404 GENERAL: reset done.

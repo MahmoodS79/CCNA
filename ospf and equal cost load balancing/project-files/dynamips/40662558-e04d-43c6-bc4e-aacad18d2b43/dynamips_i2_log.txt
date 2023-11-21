@@ -1,0 +1,102 @@
+Nov 05 19:25:58.321 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 05 19:25:58.322 HYPERVISOR: Started on IP = localhost, TCP port = 49335.
+Nov 05 19:25:58.649 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 05 19:25:58.650 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips 
+Nov 05 19:25:58.650 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips
+Nov 05 19:25:58.650 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c05b65ea-74ed-4877-bd49-84f5f02119a5 
+Nov 05 19:25:58.650 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c05b65ea-74ed-4877-bd49-84f5f02119a5
+Nov 05 19:25:58.650 HYPERVISOR: exec_cmd: vm create R1 4 c7200 
+Nov 05 19:25:58.654 VM: VM R1 created.
+Nov 05 19:25:58.654 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5003 
+Nov 05 19:25:58.655 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Nov 05 19:25:58.655 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:25:58.655 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Nov 05 19:25:58.656 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 05 19:25:58.657 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 05 19:25:58.657 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:25:58.658 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x641a83e4 
+Nov 05 19:25:58.659 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Sence79/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 19:25:58.660 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca04.6a40.0000 
+Nov 05 19:25:58.660 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Nov 05 19:25:58.661 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:25:58.661 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-8T 
+Nov 05 19:25:58.662 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:25:58.662 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-2FE-TX 
+Nov 05 19:26:04.751 HYPERVISOR: exec_cmd: nio create_udp udp-53db98c5-82ab-483c-b89c-5576ad2608d1 20004 127.0.0.1 20005 
+Nov 05 19:26:05.023 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-53db98c5-82ab-483c-b89c-5576ad2608d1 
+Nov 05 19:26:05.025 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:26:05.170 HYPERVISOR: exec_cmd: nio create_udp udp-d8b67897-95b5-4612-8535-e404c934b8b4 20012 127.0.0.1 20013 
+Nov 05 19:26:05.174 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-d8b67897-95b5-4612-8535-e404c934b8b4 
+Nov 05 19:26:05.175 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:26:06.593 HYPERVISOR: exec_cmd: nio create_udp udp-34f8d509-de4e-4ed8-9b21-2714c456d565 20026 127.0.0.1 20027 
+Nov 05 19:26:06.596 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 2 1 udp-34f8d509-de4e-4ed8-9b21-2714c456d565 
+Nov 05 19:26:06.597 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:35:36.180 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Nov 05 19:35:36.182 VM: VM Ghost created.
+Nov 05 19:35:36.187 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Sence79/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 19:35:36.188 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 05 19:35:36.189 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 19:35:36.189 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 05 19:35:36.190 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 05 19:35:36.191 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 05 19:35:36.192 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 05 19:35:37.231 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 05 19:35:37.233 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 05 19:35:37.501 VM: VM Ghost shutdown.
+Nov 05 19:35:37.502 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 05 19:35:37.503 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 05 19:35:37.503 VM: VM Ghost destroyed.
+Nov 05 19:35:37.508 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 05 19:35:37.509 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 19:35:37.509 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:35:37.519 HYPERVISOR: exec_cmd: vm set_config R1 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Nov 05 19:35:37.520 HYPERVISOR: exec_cmd: vm start R1 
+Nov 05 19:36:07.853 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 19:38:51.050 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:38:51.051 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 05 19:38:51.202 VM: VM R1 shutdown.
+Nov 05 19:38:51.204 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 19:38:56.846 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 05 19:38:56.854 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 19:38:56.856 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:38:56.863 HYPERVISOR: exec_cmd: vm set_config R1 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Nov 05 19:38:56.865 HYPERVISOR: exec_cmd: vm start R1 
+Nov 05 19:47:05.081 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:47:05.083 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 05 19:47:05.249 VM: VM R1 shutdown.
+Nov 05 19:47:05.251 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 19:47:16.748 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 05 19:47:16.756 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 19:47:16.758 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:47:16.766 HYPERVISOR: exec_cmd: vm set_config R1 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Nov 05 19:47:16.769 HYPERVISOR: exec_cmd: vm start R1 
+Nov 05 19:48:49.266 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 05 19:48:49.269 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 19:48:49.270 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:54:01.173 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 05 19:54:01.174 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 19:54:01.176 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:54:09.712 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:54:09.713 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 05 19:54:09.823 VM: VM R1 shutdown.
+Nov 05 19:54:09.824 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 19:54:16.603 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 05 19:54:16.613 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 19:54:16.614 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 19:54:16.622 HYPERVISOR: exec_cmd: vm set_config R1 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Nov 05 19:54:16.623 HYPERVISOR: exec_cmd: vm start R1 
+Nov 05 20:31:12.989 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 20:31:12.995 HYPERVISOR: exec_cmd: vm set_idle_pc_online R1 0 0x60186e04 
+Nov 05 22:29:32.687 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 22:29:32.688 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 05 22:29:32.853 VM: VM R1 shutdown.
+Nov 05 22:29:32.854 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 22:57:00.866 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 22:57:00.870 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 22:57:01.368 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 22:57:01.372 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 22:57:01.382 HYPERVISOR: exec_cmd: vm delete R1 
+Nov 05 22:57:01.382 VM: VM R1 destroyed.
+Nov 05 22:57:01.387 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 05 22:57:01.434 HYPERVISOR: Stopped.
+Nov 05 22:57:01.435 GENERAL: reset done.

@@ -1,0 +1,182 @@
+Nov 10 01:14:46.176 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 10 01:14:46.177 HYPERVISOR: Started on IP = localhost, TCP port = 52104.
+Nov 10 01:14:46.663 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 10 01:14:46.664 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips 
+Nov 10 01:14:46.664 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips
+Nov 10 01:14:46.664 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\aef1fe0d-eed4-4789-a506-854c5927f8a7 
+Nov 10 01:14:46.665 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\aef1fe0d-eed4-4789-a506-854c5927f8a7
+Nov 10 01:14:46.665 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Nov 10 01:14:46.667 VM: VM R2 created.
+Nov 10 01:14:46.668 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5002 
+Nov 10 01:14:46.668 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Nov 10 01:14:46.668 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 01:14:46.669 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Nov 10 01:14:46.670 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Nov 10 01:14:46.671 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Nov 10 01:14:46.672 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 01:14:46.673 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60186e04 
+Nov 10 01:14:46.674 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Sence79/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 10 01:14:46.675 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.6308.0000 
+Nov 10 01:14:46.675 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Nov 10 01:14:49.855 HYPERVISOR: exec_cmd: nio create_udp udp-60e77ccc-7af9-4bda-9d4a-61a02ba506db 20006 127.0.0.1 20007 
+Nov 10 01:14:50.126 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-60e77ccc-7af9-4bda-9d4a-61a02ba506db 
+Nov 10 01:14:50.128 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 01:15:13.221 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 01:15:13.229 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 01:15:13.229 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 01:15:13.241 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 01:15:13.242 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 01:15:43.603 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 01:16:13.605 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 01:21:43.763 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 09:52:26.397 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 09:52:26.398 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 09:52:26.511 VM: VM R2 shutdown.
+Nov 10 09:52:26.518 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 10:04:33.590 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 10:04:33.592 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 10:10:21.049 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 10:10:21.050 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 12:47:28.246 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 12:47:28.247 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 12:47:28.248 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 12:47:28.256 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 12:47:28.257 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 13:02:05.421 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:02:05.421 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 13:02:05.547 VM: VM R2 shutdown.
+Nov 10 13:02:05.550 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 13:02:10.240 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 13:02:10.241 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:02:10.242 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:02:10.251 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 13:02:10.251 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 13:14:43.044 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:14:43.046 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 13:14:43.171 VM: VM R2 shutdown.
+Nov 10 13:14:43.173 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 13:23:49.709 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 13:23:49.719 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:23:49.720 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:23:49.732 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 13:23:49.732 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 13:24:58.864 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:24:58.864 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 13:24:58.992 VM: VM R2 shutdown.
+Nov 10 13:24:58.994 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 13:28:22.115 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 13:28:22.124 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:28:22.127 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:28:22.136 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 13:28:22.137 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 13:30:45.892 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:30:45.893 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 13:30:46.035 VM: VM R2 shutdown.
+Nov 10 13:30:46.040 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 13:30:50.191 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 13:30:50.193 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:30:50.194 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:30:50.205 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 13:30:50.206 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 13:31:41.088 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:31:41.089 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 13:31:41.220 VM: VM R2 shutdown.
+Nov 10 13:31:41.222 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 13:31:41.421 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 13:31:41.423 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:31:41.424 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:31:41.434 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 13:31:41.435 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 13:32:11.858 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 13:35:22.109 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:35:22.110 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 13:35:22.251 VM: VM R2 shutdown.
+Nov 10 13:35:22.253 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 13:35:22.632 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 13:35:22.635 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:35:22.636 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:35:22.648 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 13:35:22.649 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 13:36:56.153 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:36:56.153 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 13:36:56.276 VM: VM R2 shutdown.
+Nov 10 13:36:56.278 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 13:36:56.470 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 13:36:56.472 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:36:56.473 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 13:36:56.482 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 13:36:56.483 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 13:37:00.492 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 13:37:00.494 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:37:00.494 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:11:10.204 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 14:11:10.206 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:11:10.207 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:11:13.945 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:11:13.947 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 14:11:14.061 VM: VM R2 shutdown.
+Nov 10 14:11:14.063 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:11:14.677 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 14:11:14.679 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:11:14.680 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:11:14.690 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 14:11:14.692 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 14:13:34.468 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:13:34.471 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 14:13:34.607 VM: VM R2 shutdown.
+Nov 10 14:13:34.608 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:18:12.907 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 14:18:12.917 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:18:12.918 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:18:12.929 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 14:18:12.929 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 14:25:29.272 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:25:29.273 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 14:25:29.413 VM: VM R2 shutdown.
+Nov 10 14:25:29.416 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:25:29.628 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 14:25:29.630 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:25:29.631 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:25:29.643 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 14:25:29.645 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 14:27:21.890 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:27:21.890 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 14:27:22.001 VM: VM R2 shutdown.
+Nov 10 14:27:22.003 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:27:33.715 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 14:27:33.724 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:27:33.725 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:27:33.736 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 14:27:33.737 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 14:33:25.216 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:33:25.217 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 14:33:25.357 VM: VM R2 shutdown.
+Nov 10 14:33:25.359 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:33:25.605 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 14:33:25.607 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:33:25.608 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:33:25.618 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 14:33:25.619 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 14:52:26.386 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:54:57.034 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:54:57.035 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 14:54:57.172 VM: VM R2 shutdown.
+Nov 10 14:54:57.174 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:55:01.741 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 10 14:55:01.743 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:55:01.743 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:55:01.752 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 10 14:55:01.754 HYPERVISOR: exec_cmd: vm start R2 
+Nov 10 14:55:12.967 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:55:12.968 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 10 14:55:13.096 VM: VM R2 shutdown.
+Nov 10 14:55:13.098 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:55:14.933 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:55:14.937 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:55:15.178 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 10 14:55:15.179 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 10 14:55:15.183 HYPERVISOR: exec_cmd: vm delete R2 
+Nov 10 14:55:15.183 VM: VM R2 destroyed.
+Nov 10 14:55:15.186 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 10 14:55:15.669 HYPERVISOR: Stopped.
+Nov 10 14:55:15.669 GENERAL: reset done.

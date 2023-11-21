@@ -1,0 +1,195 @@
+Nov 10 01:14:45.498 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 10 01:14:45.499 HYPERVISOR: Started on IP = localhost, TCP port = 52101.
+Nov 10 01:14:45.994 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 10 01:14:45.997 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips 
+Nov 10 01:14:45.998 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips
+Nov 10 01:14:45.999 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\823d3d2f-f67c-40a5-bd2c-361f82b40866 
+Nov 10 01:14:45.999 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\823d3d2f-f67c-40a5-bd2c-361f82b40866
+Nov 10 01:14:46.001 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Nov 10 01:14:46.007 VM: VM R1 created.
+Nov 10 01:14:46.009 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5001 
+Nov 10 01:14:46.010 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Nov 10 01:14:46.011 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 01:14:46.012 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Nov 10 01:14:46.016 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 10 01:14:46.018 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 10 01:14:46.020 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 01:14:46.021 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60186e04 
+Nov 10 01:14:46.026 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Sence79/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 10 01:14:46.027 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.40d0.0000 
+Nov 10 01:14:46.028 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Nov 10 01:14:49.529 HYPERVISOR: exec_cmd: nio create_udp udp-adacbbe5-1d1d-4a37-aefe-15c90ec487b4 20002 127.0.0.1 20003 
+Nov 10 01:14:49.793 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-adacbbe5-1d1d-4a37-aefe-15c90ec487b4 
+Nov 10 01:14:49.794 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 01:15:12.512 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Nov 10 01:15:12.514 VM: VM Ghost created.
+Nov 10 01:15:12.516 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Sence79/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 10 01:15:12.518 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 10 01:15:12.519 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 01:15:12.520 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 10 01:15:12.520 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 10 01:15:12.521 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 10 01:15:12.522 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 10 01:15:12.999 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 10 01:15:13.000 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 10 01:15:13.211 VM: VM Ghost shutdown.
+Nov 10 01:15:13.212 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 10 01:15:13.214 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 10 01:15:13.214 VM: VM Ghost destroyed.
+Nov 10 01:15:13.220 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 01:15:13.220 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 01:15:13.221 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 01:15:13.228 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 01:15:13.229 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 01:15:43.543 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 01:16:13.545 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 09:52:26.392 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 09:52:26.393 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 09:52:26.511 VM: VM R1 shutdown.
+Nov 10 09:52:26.520 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 10:04:33.582 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:04:33.584 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 10:10:21.042 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:10:21.043 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 12:47:28.230 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 12:47:28.231 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 12:47:28.233 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 12:47:28.244 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 12:47:28.245 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 13:02:05.417 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:02:05.417 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 13:02:05.539 VM: VM R1 shutdown.
+Nov 10 13:02:05.540 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 13:02:10.226 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 13:02:10.227 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:02:10.229 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:02:10.238 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 13:02:10.239 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 13:14:43.046 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:14:43.047 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 13:14:43.189 VM: VM R1 shutdown.
+Nov 10 13:14:43.191 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 13:23:49.705 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 13:23:49.707 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:23:49.708 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:23:49.718 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 13:23:49.720 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 13:24:58.863 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:24:58.864 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 13:24:58.991 VM: VM R1 shutdown.
+Nov 10 13:24:58.993 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 13:28:22.111 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 13:28:22.112 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:28:22.113 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:28:22.123 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 13:28:22.125 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 13:30:45.891 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:30:45.893 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 13:30:46.033 VM: VM R1 shutdown.
+Nov 10 13:30:46.035 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 13:30:50.196 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 13:30:50.205 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:30:50.207 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:30:50.217 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 13:30:50.219 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 13:31:41.088 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:31:41.089 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 13:31:41.237 VM: VM R1 shutdown.
+Nov 10 13:31:41.239 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 13:31:41.426 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 13:31:41.434 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:31:41.435 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:31:41.444 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 13:31:41.445 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 13:35:22.109 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:35:22.110 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 13:35:22.257 VM: VM R1 shutdown.
+Nov 10 13:35:22.261 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 13:35:22.637 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 13:35:22.648 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:35:22.650 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:35:22.658 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 13:35:22.660 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 13:36:56.152 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:36:56.153 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 13:36:56.293 VM: VM R1 shutdown.
+Nov 10 13:36:56.294 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 13:36:56.474 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 13:36:56.482 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:36:56.484 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 13:36:56.492 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 13:36:56.493 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 13:37:00.497 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 13:37:00.499 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 13:37:00.501 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:11:10.208 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 14:11:10.210 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:11:10.212 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:11:13.947 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:11:13.948 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 14:11:14.069 VM: VM R1 shutdown.
+Nov 10 14:11:14.072 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:11:14.682 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 14:11:14.691 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:11:14.694 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:11:14.702 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 14:11:14.704 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 14:13:34.471 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:13:34.472 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 14:13:34.607 VM: VM R1 shutdown.
+Nov 10 14:13:34.609 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:18:12.903 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 14:18:12.904 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:18:12.905 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:18:12.916 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 14:18:12.917 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 14:25:29.271 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:25:29.273 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 14:25:29.394 VM: VM R1 shutdown.
+Nov 10 14:25:29.396 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:25:29.633 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 14:25:29.644 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:25:29.646 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:25:29.655 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 14:25:29.656 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 14:27:21.889 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:27:21.890 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 14:27:22.021 VM: VM R1 shutdown.
+Nov 10 14:27:22.022 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:27:33.710 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 14:27:33.712 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:27:33.713 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:27:33.723 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 14:27:33.724 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 14:33:25.216 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:33:25.217 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 14:33:25.360 VM: VM R1 shutdown.
+Nov 10 14:33:25.365 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:33:25.610 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 14:33:25.619 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:33:25.620 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:33:25.629 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 14:33:25.632 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 14:52:26.387 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:54:57.034 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:54:57.034 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 14:54:57.176 VM: VM R1 shutdown.
+Nov 10 14:54:57.181 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:55:01.744 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 14:55:01.753 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Sence79\GNS3\projects\ipv6 routing and DHCP with DNS\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 10 14:55:01.755 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:55:01.763 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 10 14:55:01.765 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 14:55:12.967 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:55:12.968 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 14:55:13.100 VM: VM R1 shutdown.
+Nov 10 14:55:13.104 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:55:14.936 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:55:14.938 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:55:15.191 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:55:15.193 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:55:15.196 HYPERVISOR: exec_cmd: vm delete R1 
+Nov 10 14:55:15.196 VM: VM R1 destroyed.
+Nov 10 14:55:15.198 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 10 14:55:15.420 HYPERVISOR: Stopped.
+Nov 10 14:55:15.421 GENERAL: reset done.

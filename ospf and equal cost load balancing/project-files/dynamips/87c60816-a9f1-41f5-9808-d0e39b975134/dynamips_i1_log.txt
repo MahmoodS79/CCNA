@@ -1,0 +1,114 @@
+Nov 05 19:25:57.573 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 05 19:25:57.575 HYPERVISOR: Started on IP = localhost, TCP port = 49326.
+Nov 05 19:25:58.054 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 05 19:25:58.055 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips 
+Nov 05 19:25:58.069 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips
+Nov 05 19:25:58.070 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\0552b8a7-0a15-40ba-8ab1-1d9732fb9e1b 
+Nov 05 19:25:58.070 GENERAL: working_dir=C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\0552b8a7-0a15-40ba-8ab1-1d9732fb9e1b
+Nov 05 19:25:58.070 HYPERVISOR: exec_cmd: vm create R2 3 c3725 
+Nov 05 19:25:58.073 VM: VM R2 created.
+Nov 05 19:25:58.074 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5002 
+Nov 05 19:25:58.074 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Nov 05 19:25:58.075 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Nov 05 19:25:58.075 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Nov 05 19:25:58.076 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:25:58.076 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60c09c58 
+Nov 05 19:25:58.078 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Sence79/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Nov 05 19:25:58.079 HYPERVISOR: exec_cmd: c3725 set_mac_addr R2 c203.0f98.0000 
+Nov 05 19:25:58.080 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Nov 05 19:25:58.080 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Nov 05 19:25:58.081 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:25:58.081 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Nov 05 19:25:58.082 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:25:58.082 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-4T 
+Nov 05 19:25:58.083 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:25:58.083 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+Nov 05 19:25:58.084 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:25:58.084 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 32 WIC-1T 
+Nov 05 19:26:04.492 HYPERVISOR: exec_cmd: nio create_udp udp-47441eff-7f67-4817-82cb-0906a1af8297 20002 127.0.0.1 20003 
+Nov 05 19:26:04.743 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 16 udp-47441eff-7f67-4817-82cb-0906a1af8297 
+Nov 05 19:26:04.744 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:26:05.103 HYPERVISOR: exec_cmd: nio create_udp udp-edc16364-2a6c-41a8-8be0-78fba60dcaa6 20008 127.0.0.1 20009 
+Nov 05 19:26:05.106 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-edc16364-2a6c-41a8-8be0-78fba60dcaa6 
+Nov 05 19:26:05.107 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:26:06.550 HYPERVISOR: exec_cmd: nio create_udp udp-7a3b7f27-5ec0-467b-bca6-11496c38cd2d 20022 127.0.0.1 20023 
+Nov 05 19:26:06.553 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-7a3b7f27-5ec0-467b-bca6-11496c38cd2d 
+Nov 05 19:26:06.554 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:35:35.213 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Nov 05 19:35:35.215 VM: VM Ghost created.
+Nov 05 19:35:35.218 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Sence79/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Nov 05 19:35:35.220 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 05 19:35:35.221 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Nov 05 19:35:35.222 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 05 19:35:35.223 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 05 19:35:35.226 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 05 19:35:35.226 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 05 19:35:35.920 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 05 19:35:35.922 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 05 19:35:36.158 VM: VM Ghost shutdown.
+Nov 05 19:35:36.159 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 05 19:35:36.162 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 05 19:35:36.163 VM: VM Ghost destroyed.
+Nov 05 19:35:36.175 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 05 19:35:36.176 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Nov 05 19:35:36.177 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:35:36.186 HYPERVISOR: exec_cmd: vm set_config R2 configs\i3_startup-config.cfg 
+Nov 05 19:35:36.187 HYPERVISOR: exec_cmd: vm start R2 
+Nov 05 19:36:06.657 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:36:06.661 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:38:51.049 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:38:51.050 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 05 19:38:51.260 VM: VM R2 shutdown.
+Nov 05 19:38:51.261 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:38:56.842 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 05 19:38:56.844 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Nov 05 19:38:56.845 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:38:56.853 HYPERVISOR: exec_cmd: vm set_config R2 configs\i3_startup-config.cfg 
+Nov 05 19:38:56.854 HYPERVISOR: exec_cmd: vm start R2 
+Nov 05 19:39:27.234 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:39:27.241 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:47:05.080 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:47:05.083 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 05 19:47:05.321 VM: VM R2 shutdown.
+Nov 05 19:47:05.323 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:47:16.744 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 05 19:47:16.746 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Nov 05 19:47:16.747 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:47:16.756 HYPERVISOR: exec_cmd: vm set_config R2 configs\i3_startup-config.cfg 
+Nov 05 19:47:16.757 HYPERVISOR: exec_cmd: vm start R2 
+Nov 05 19:47:47.101 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:47:47.105 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:48:49.262 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 05 19:48:49.265 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Nov 05 19:48:49.266 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:53:48.681 HYPERVISOR: exec_cmd: nio create_udp udp-bd8a0d97-091c-4bf0-9f2b-68d7a96f4c34 20038 127.0.0.1 20039 
+Nov 05 19:53:48.684 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-bd8a0d97-091c-4bf0-9f2b-68d7a96f4c34 
+Nov 05 19:53:48.685 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:53:48.685 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 1 0 
+Nov 05 19:54:01.170 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 05 19:54:01.171 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Nov 05 19:54:01.172 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:54:09.711 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:54:09.713 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 05 19:54:09.958 VM: VM R2 shutdown.
+Nov 05 19:54:09.960 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:54:16.600 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 05 19:54:16.601 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\Sence79\GNS3\projects\Adel course lab1\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Nov 05 19:54:16.602 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 19:54:16.612 HYPERVISOR: exec_cmd: vm set_config R2 configs\i3_startup-config.cfg 
+Nov 05 19:54:16.613 HYPERVISOR: exec_cmd: vm start R2 
+Nov 05 19:54:46.940 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 19:54:46.943 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 22:29:32.686 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 22:29:32.688 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 05 22:29:32.792 VM: VM R2 shutdown.
+Nov 05 22:29:32.794 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 22:57:00.864 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 22:57:00.869 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 22:57:01.474 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 22:57:01.484 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 22:57:01.488 HYPERVISOR: exec_cmd: vm delete R2 
+Nov 05 22:57:01.488 VM: VM R2 destroyed.
+Nov 05 22:57:01.489 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 05 22:57:01.947 HYPERVISOR: Stopped.
+Nov 05 22:57:01.949 GENERAL: reset done.
